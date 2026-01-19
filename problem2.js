@@ -1,18 +1,13 @@
 // Problem 2: Count Vowels in a String
 
-function countStr(str) {
-  let count = 0;
-  let vowels = "AEIOUaeiou";
+const string = "NilAndu";
+let count = 0;
+let vowels = "AEIOUaeiou";
 
-  for (let i = 0; i < str.length; i++) {
-    if (vowels.includes(str[i])) {
-      count++;
-    }
+for (let i = 0; i < string.length; i++) {
+  if (vowels.includes(string[i])) {
+    count++;
   }
-  return count;
 }
 
-const string = "NilAndu";
-const totalVowels = countStr(string);
-
-console.log(totalVowels);
+console.log(count);
